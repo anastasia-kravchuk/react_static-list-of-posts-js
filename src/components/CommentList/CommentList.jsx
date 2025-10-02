@@ -8,7 +8,10 @@ export const CommentList = ({ comments }) => (
         <CommentInfo key={comment.id} comment={comment} />
       ))
     ) : (
-      <b data-cy="NoCommentsMessage">No comments yet</b>
+      <>
+        <hr />
+        <b data-cy="NoCommentsMessage">No comments yet</b>
+      </>
     )}
   </div>
 );
